@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Carousel spec",
+  "type": "object",
+  "required": ["slides"],
+  "properties": {
+    "topic": {"type": "string", "description": "slug del post, es. pre-chorus-vs-chorus"},
+    "out_dir": {"type": "string", "description": "opzionale, SOLO per uso locale; non committare path assoluti"},
+    "slides": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/slide"}
+    }
+  },
+  "$defs": {
+    "color": {"enum": ["BG", "WHITE", "GOLD", "PILL", "BODY", "MUTE", "WM"]},
+    "weight": {"enum": ["reg", "med", "semi", "bold", "black"]},
+    "run": {
+      "type": "object",
+      "required": ["t"],
+      "properties": {
+        "t": {"type": "string"},
+        "w": {"$ref": "#/$defs/weight", "default": "reg"},
+        "c": {"$ref": "#/$defs/color", "default": "BODY"},
+        "size": {"type": "number", "description": "default = body_size della slide"}
+      },
+      "additionalProperties": false
+    },
+    "line": {
+      "oneOf": [
+        {"type": "string", "description": "run singolo, peso/colore del blocco"},
+        {"type": "array", "items": {"$ref": "#/$defs/run"}, "description": "run misti"}
+      ]
+    },
+    "slide": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": ["type", "label", "title_white", "title_gold"],
+          "properties": {
+            "type": {"const": "cover"},
+            "label": {"type": "string"},
+            "title_size": {"type": "number", "default": 64},
+            "title_white": {"type": "array", "items": {"type": "string"}},
+            "title_gold": {"type": "array", "items": {"type": "string"}},
+            "cy": {"type": "number", "default": 0.5}
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": ["type", "label", "title", "body"],
+          "properties": {
+            "type": {"const": "content"},
+            "label": {"type": "string"},
+            "title": {"type": "array", "items": {"type": "string"}},
+            "body": {"type": "array", "items": {"$ref": "#/$defs/line"}},
+            "title_size": {"type": "number", "default": 40},
+            "body_size": {"type": "number", "default": 23},
+            "cy": {"type": "number", "default": 0.42}
+          },
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": ["type", "label", "title", "body"],
+          "properties": {
+            "type": {"const": "cta"},
+            "label": {"type": "string"},
+            "title": {"type": "array", "items": {"type": "string"}},
+            "body": {"type": "array", "items": {"$ref": "#/$defs/line"}},
+            "pill_text": {"type": "string", "default": "Link in bio  ↓"},
+            "title_size": {"type": "number", "default": 58},
+            "body_size": {"type": "number", "default": 27},
+            "cy": {"type": "number", "default": 0.5}
+          },
+          "additionalProperties": false
+        }
+      ]
+    }
+  }
+}

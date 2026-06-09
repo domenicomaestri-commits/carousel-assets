@@ -1,0 +1,57 @@
+{
+  "topic": "tema-slug-qui",
+  "slides": [
+    {
+      "type": "cover",
+      "label": "ETICHETTA",
+      "title_size": 64,
+      "title_white": ["Prima parte", "della tesi."],
+      "title_gold": ["Seconda parte", "in oro."]
+    },
+    {
+      "type": "content",
+      "label": "DEFINIZIONE",
+      "title": ["Titolo", "su due righe."],
+      "body": [
+        "Riga normale di body.",
+        [{"t": "Riga con "}, {"t": "enfasi", "w": "bold", "c": "WHITE"}, {"t": "."}],
+        [{"t": " ", "size": 10}],
+        "Riga dopo lo spazio."
+      ]
+    },
+    {
+      "type": "content",
+      "label": "FUNZIONE",
+      "title": ["...", "..."],
+      "body": ["..."]
+    },
+    {
+      "type": "content",
+      "label": "GLI STRUMENTI",
+      "title": ["...", "..."],
+      "body": [
+        [{"t": "—  ", "w": "med", "c": "GOLD"}, {"t": "Voce", "w": "bold", "c": "WHITE"}, {"t": " descrizione"}]
+      ]
+    },
+    {
+      "type": "content",
+      "label": "L'ERRORE",
+      "title": ["...", "..."],
+      "body": ["..."]
+    },
+    {
+      "type": "content",
+      "label": "LA REGOLA",
+      "title": ["...", "..."],
+      "body": ["..."]
+    },
+    {
+      "type": "cta",
+      "label": "FREE",
+      "title_size": 58,
+      "title": ["Vuoi capire come", "strutturare", "le tue canzoni?"],
+      "body": ["La Ricetta della Canzone.", "Guida al songwriting, gratis."],
+      "pill_text": "Link in bio  ↓"
+    }
+  ]
+}

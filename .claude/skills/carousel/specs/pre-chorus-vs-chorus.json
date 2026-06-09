@@ -1,0 +1,86 @@
+{
+  "topic": "pre-chorus-vs-chorus",
+  "slides": [
+    {
+      "type": "cover",
+      "label": "THE BUILD",
+      "title_size": 64,
+      "title_white": ["Pre-chorus e chorus", "non sono la stessa cosa."],
+      "title_gold": ["E saltarlo spegne", "il tuo ritornello."]
+    },
+    {
+      "type": "content",
+      "label": "WHAT IS A PRE-CHORUS",
+      "title": ["Il pre-chorus", "è una rampa di lancio."],
+      "body": [
+        "Non è un pezzo di strofa, né",
+        "mezzo ritornello. È la sezione",
+        [{"t": "che "}, {"t": "alza la tensione", "w": "bold", "c": "WHITE"}, {"t": " e ti"}],
+        "spinge dentro il chorus.",
+        [{"t": " ", "size": 10}],
+        "Pochi secondi. Un solo compito:",
+        "far desiderare il ritornello."
+      ]
+    },
+    {
+      "type": "content",
+      "label": "LA FUNZIONE",
+      "title": ["Costruisce", "l'attesa."],
+      "body": [
+        "La strofa racconta.",
+        "Il chorus libera.",
+        [{"t": "Il pre-chorus "}, {"t": "costruisce", "w": "bold", "c": "WHITE"}],
+        [{"t": "la spinta", "w": "bold", "c": "WHITE"}, {"t": " che sta in mezzo."}],
+        [{"t": " ", "size": 10}],
+        "È il momento in cui dici:",
+        [{"t": "«sta per arrivare qualcosa».", "w": "bold", "c": "WHITE"}]
+      ]
+    },
+    {
+      "type": "content",
+      "label": "GLI STRUMENTI",
+      "title": ["Come si alza", "la tensione."],
+      "body": [
+        [{"t": "—  ", "w": "med", "c": "GOLD"}, {"t": "Melodia", "w": "bold", "c": "WHITE"}, {"t": " che sale verso l'acuto"}],
+        [{"t": "—  ", "w": "med", "c": "GOLD"}, {"t": "Armonia", "w": "bold", "c": "WHITE"}, {"t": " che resta sospesa"}],
+        [{"t": "—  ", "w": "med", "c": "GOLD"}, {"t": "Ritmo", "w": "bold", "c": "WHITE"}, {"t": " che si fa più fitto"}],
+        [{"t": "—  ", "w": "med", "c": "GOLD"}, {"t": "Testo", "w": "bold", "c": "WHITE"}, {"t": " che apre una domanda"}]
+      ]
+    },
+    {
+      "type": "content",
+      "label": "L'ERRORE",
+      "title": ["Se è troppo bello,", "rubi la scena."],
+      "body": [
+        "Il pre-chorus non deve battere",
+        "il chorus. Se la parte più forte",
+        [{"t": "è qui, "}, {"t": "il ritornello sembrerà", "w": "bold", "c": "WHITE"}],
+        [{"t": "debole", "w": "bold", "c": "WHITE"}, {"t": " quando arriva."}],
+        [{"t": " ", "size": 10}],
+        "Tienilo in tensione,",
+        "non in esplosione."
+      ]
+    },
+    {
+      "type": "content",
+      "label": "LA REGOLA",
+      "title": ["Sali.", "Non arrivare."],
+      "body": [
+        "Un buon pre-chorus finisce",
+        [{"t": "un attimo "}, {"t": "prima", "w": "bold", "c": "WHITE"}, {"t": " della"}],
+        [{"t": "soddisfazione.", "w": "bold", "c": "WHITE"}],
+        [{"t": " ", "size": 10}],
+        "Lasci la promessa aperta —",
+        "e il chorus la mantiene."
+      ]
+    },
+    {
+      "type": "cta",
+      "label": "FREE",
+      "title_size": 58,
+      "title": ["Vuoi capire come", "strutturare", "le tue canzoni?"],
+      "body": ["La Ricetta della Canzone.", "Guida al songwriting, gratis."],
+      "pill_text": "Link in bio  ↓"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "dir=\"${CLAUDE_PROJECT_DIR:-$PWD}\"; v=\"$dir/.claude/verify.sh\"; [ -f \"$v\" ] || exit 0; bash \"$v\" >/tmp/claude-verify.log 2>&1 && exit 0; echo \"{\\\"decision\\\":\\\"block\\\",\\\"reason\\\":\\\"Golden-master verify FALLITO (semaforo rosso). Esegui .claude/verify.sh, leggi /tmp/claude-verify.log e correggi finche non passa, poi fermati.\\\"}\"",
+            "statusMessage": "Verifica golden-master carosello..."
+          }
+        ]
+      }
+    ]
+  }
+}
