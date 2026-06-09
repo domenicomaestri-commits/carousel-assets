@@ -10,7 +10,20 @@ Exit 0 = green (match within tolerance), exit 1 = red (regression).
 """
 import sys
 from pathlib import Path
-from PIL import Image, ImageChops
+
+try:
+    from PIL import Image, ImageChops
+except ImportError:
+    import subprocess
+    for args in (["--quiet", "Pillow>=10"],
+                 ["--quiet", "--user", "Pillow>=10"],
+                 ["--quiet", "--break-system-packages", "Pillow>=10"]):
+        try:
+            subprocess.check_call([sys.executable, "-m", "pip", "install", *args])
+            break
+        except subprocess.CalledProcessError:
+            continue
+    from PIL import Image, ImageChops
 
 CHANNEL_THRESH = 50      # per-pixel luminance-diff considered "real"
 MAX_FRAC       = 0.0030  # max fraction of pixels allowed to differ that much
